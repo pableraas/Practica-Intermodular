@@ -25,23 +25,23 @@
             android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get"/>
+            android:text="Get1"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Post"/>
+            android:text="Get2"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"/>
+            android:text="Get3"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patch"/>
+            android:text="Delete"/>
 
     </com.google.android.material.tabs.TabLayout>
     

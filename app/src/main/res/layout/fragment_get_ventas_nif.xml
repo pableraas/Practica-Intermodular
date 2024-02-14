@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PostFragment">
+    tools:context=".GetVentasNifFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,5 +11,5 @@
         android:layout_height="match_parent"
         android:textSize="24dp"
         android:textAlignment="center"
-        android:text="Post Fragment" />
+        android:text="get Ventas NIF Fragment" />
 </FrameLayout>

@@ -33,13 +33,13 @@ public class SegundaActividad extends AppCompatActivity {
                     case 0:
                         fragment = new PutFragment();
                     case 1:
-                        fragment = new GetFragment();
+                        fragment = new GetVentasFechaFragment();
                     case 2:
-                        fragment = new PostFragment();
+                        fragment = new GetVentasNifFragment();
                     case 3:
                         fragment = new DeleteFragment();
                     case 4:
-                        fragment = new PatchFragment();
+                        fragment = new GetVentasCampoClaveFragment();
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, fragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();

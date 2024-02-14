@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetFragment">
+    tools:context=".GetVentasCampoClaveFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,6 +11,5 @@
         android:layout_height="match_parent"
         android:textSize="24dp"
         android:textAlignment="center"
-        android:text="Get Fragment" />
-
+        android:text="Get Ventas Campo Clave" />
 </FrameLayout>

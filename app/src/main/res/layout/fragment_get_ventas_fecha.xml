@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatchFragment">
+    tools:context=".GetVentasFechaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,5 +11,6 @@
         android:layout_height="match_parent"
         android:textSize="24dp"
         android:textAlignment="center"
-        android:text="Patch Fragment" />
+        android:text="Get Ventas Fecha Fragment" />
+
 </FrameLayout>
