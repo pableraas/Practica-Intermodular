@@ -2,4 +2,11 @@
     <string name="app_name">PracticaIntermodular</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tWLogin">LOG IN</string>
+    <string name="eTUsuario">Usuario (DNI)</string>
+    <string name="btLogin">Iniciar Sesión</string>
+    <string name="tWInicio">¡Bienvenidos al gestor!</string>
+
+
+
 </resources>

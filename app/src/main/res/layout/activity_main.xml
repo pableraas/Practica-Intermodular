@@ -4,52 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoPrueba"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="195dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="29dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="275dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="36dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Usuario"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="275dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="453dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Contraseña"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <TextView
-        android:id="@+id/aviso"
-        android:layout_width="317dp"
-        android:layout_height="358dp"
+        android:id="@+id/twLogin"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:text="@string/tWLogin"
+        android:textColor="#E8F2FA"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/tWInicio"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
+        android:text="@string/tWInicio"
+        android:textColor="#E8F2FA"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <EditText
+        android:id="@+id/eTUsuario"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTUsuario"
+        android:textColor="#E8F2FA"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6C504"
+        android:text="@string/btLogin"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
