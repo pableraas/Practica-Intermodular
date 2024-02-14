@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view.getId() == binding.btInicio.getId())    {
-            intentSegundaActividad();
+            intentActividadIntermedia();
         }
     }
     //////////////////////////////////////////
-    public void intentSegundaActividad() {
-        Intent intent = new Intent(this, SegundaActividad.class);
+    public void intentActividadIntermedia() {
+        Intent intent = new Intent(this, ActividadIntermedia.class);
         startActivity(intent);
     }
 }

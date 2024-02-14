@@ -8,6 +8,7 @@
     <string name="tWInicio">¡Bienvenidos al gestor!</string>
     <string name="btConsultarProductos">Consultar Productos</string>
     <string name="btGestionVentas">Gestionar Ventas</string>
+    <string name="twEscogeOpcion">Escoge una opción para continuar</string>
 
 
 </resources>

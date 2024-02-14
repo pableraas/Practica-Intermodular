@@ -7,65 +7,50 @@
     tools:context=".ActividadIntermedia"
     android:background="@drawable/fondoprueba">
 
+
     <TextView
-        android:id="@+id/twLogin"
-        android:layout_width="149dp"
-        android:layout_height="71dp"
-        android:text="@string/tWLogin"
+        android:id="@+id/twEscogeOpcion"
+        android:layout_width="229dp"
+        android:layout_height="85dp"
+        android:text="@string/twEscogeOpcion"
+        android:textAlignment="center"
         android:textColor="#E8F2FA"
-        android:textSize="40dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
-
-    <TextView
-        android:id="@+id/tWInicio"
-        android:layout_width="278dp"
-        android:layout_height="58dp"
-        android:text="@string/tWInicio"
-        android:textColor="#E8F2FA"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335" />
-
+        app:layout_constraintVertical_bias="0.252" />
 
     <Button
         android:id="@+id/btConsultarProductos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="341dp"
+        android:layout_height="68dp"
         android:backgroundTint="#E6C504"
-        android:text="@string/btLogin"
-        android:textSize="30dp"
+        android:text="@string/btConsultarProductos"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/btGestionVentas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:layout_height="74dp"
         android:backgroundTint="#E6C504"
-        android:text="@string/btLogin"
-        android:textSize="30dp"
+        android:text="@string/btGestionVentas"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.614" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
