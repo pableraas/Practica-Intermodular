@@ -6,6 +6,8 @@
     <string name="eTUsuario">Usuario (DNI)</string>
     <string name="btLogin">Iniciar Sesión</string>
     <string name="tWInicio">¡Bienvenidos al gestor!</string>
+    <string name="btConsultarProductos">Consultar Productos</string>
+    <string name="btGestionVentas">Gestionar Ventas</string>
 
 
 </resources>
