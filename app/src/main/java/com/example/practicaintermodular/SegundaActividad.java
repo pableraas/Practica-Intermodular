@@ -1,6 +1,8 @@
 package com.example.practicaintermodular;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.widget.FrameLayout;
@@ -19,5 +21,39 @@ public class SegundaActividad extends AppCompatActivity {
 
         frameLayout = (FrameLayout) findViewById(R.id.framelayout);
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, new PutFragment())
+                .addToBackStack(null).commit();
+
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                Fragment fragment = null;
+                switch (tab.getPosition()){
+                    case 0:
+                        fragment = new PutFragment();
+                    case 1:
+                        fragment = new GetFragment();
+                    case 2:
+                        fragment = new PostFragment();
+                    case 3:
+                        fragment = new DeleteFragment();
+                    case 4:
+                        fragment = new PatchFragment();
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, fragment)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
     }
 }
