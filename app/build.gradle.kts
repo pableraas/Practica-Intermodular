@@ -6,6 +6,10 @@ android {
     namespace = "com.example.practicaintermodular"
     compileSdk = 34
 
+    buildFeatures   {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.practicaintermodular"
         minSdk = 24
