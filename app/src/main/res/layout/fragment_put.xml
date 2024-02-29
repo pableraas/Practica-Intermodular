@@ -3,48 +3,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PutFragment">
+    tools:context=".PutFragment"
+    android:background="@drawable/fondoprueba">
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Put Fragment"
-        android:textAlignment="center"
-        android:textSize="24dp" />
-    <!--
-    <EditText
+        android:id="@+id/twInsertarVenta"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="text" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STOCKANUAL"
-        android:textSize="24dp"
-        android:layout_marginTop="16dp" />
-
+        android:layout_height="87dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="125dp"
+        android:text="@string/btnInsertarVenta"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="numero de stock disponible" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PVP"
-        android:textSize="24dp"
-        android:layout_marginTop="16dp" />
-
+        android:id="@+id/eTFechaVenta"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTFechaVenta"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="190dp"
+        />
 
     <EditText
+        android:id="@+id/eTIDCliente"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTIDCliente"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="260dp"/>
+
+    <EditText
+        android:id="@+id/eTIDProducto"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTIDProducto"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="330dp"/>
+
+    <EditText
+        android:id="@+id/eTCantidad"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTCantidad"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="395dp"/>
+
+    <Button
+        android:id="@+id/btnInsertarVenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="precio" />
-    -->
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/btnInsertarVenta"
+        android:backgroundTint="#E6C504"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 </FrameLayout>

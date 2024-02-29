@@ -11,37 +11,37 @@
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#075E53"
+        android:background="#E6C504"
         app:tabIndicator="@color/white"
-        app:tabSelectedTextColor="@color/white"
+        app:tabSelectedTextColor="#E8F2FA"
         >
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Put"/>
+            android:text="@string/btnInsertarVenta"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get1"/>
+            android:text="@string/btnConsultarXFechas"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get2"/>
+            android:text="@string/btnConsultarXNif"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get3"/>
+            android:text="@string/btnConsultarXClave"/>
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"/>
+            android:text="@string/btnEliminarVenta"/>
 
     </com.google.android.material.tabs.TabLayout>
     

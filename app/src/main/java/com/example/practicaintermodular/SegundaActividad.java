@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class SegundaActividad extends AppCompatActivity {
+public class    SegundaActividad extends AppCompatActivity {
 
     FrameLayout frameLayout;
     TabLayout tabLayout;
@@ -32,14 +32,20 @@ public class SegundaActividad extends AppCompatActivity {
                 switch (tab.getPosition()){
                     case 0:
                         fragment = new PutFragment();
+                        break;
                     case 1:
                         fragment = new GetVentasFechaFragment();
+                        break;
                     case 2:
                         fragment = new GetVentasNifFragment();
+                        break;
                     case 3:
-                        fragment = new DeleteFragment();
-                    case 4:
                         fragment = new GetVentasCampoClaveFragment();
+                        break;
+                    case 4:
+                        fragment = new DeleteFragment();
+
+                        break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, fragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();

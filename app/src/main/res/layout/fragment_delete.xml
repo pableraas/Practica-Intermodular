@@ -3,14 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeleteFragment">
+    tools:context=".DeleteFragment"
+    android:background="@drawable/fondoprueba">
 
-    <!-- TODO: Update blank fragment layout -->
+
+<!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="24dp"
-        android:textAlignment="center"
-        android:text="Delete Fragment" />
+        android:id="@+id/twEliminarVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="125dp"
+        android:text="@string/btnEliminarVenta"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/eTIDCliente"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTIDCliente"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="300dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnEliminarVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/btnEliminarVenta"
+        android:backgroundTint="#E6C504"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
 </FrameLayout>

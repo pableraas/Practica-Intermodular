@@ -9,6 +9,19 @@
     <string name="btConsultarProductos">Consultar Productos</string>
     <string name="btGestionVentas">Gestionar Ventas</string>
     <string name="twEscogeOpcion">Escoge una opción para continuar</string>
+    <string name="btnInsertarVenta">Insertar Venta</string>
+    <string name="etIDVenta">ID Venta</string>
+    <string name="eTFechaVenta">Fecha Venta</string>
+    <string name="eTIDCliente">ID Cliente</string>
+    <string name="eTIDProducto">ID Producto</string>
+    <string name="eTCantidad">Cantidad</string>
+    <string name="btnConsultarXFechas">Consultar por Fecha</string>
+    <string name="btnConsultarXNif">Consultar por NIF</string>
+    <string name="btnConsultarXClave">Consultar por ID</string>
+    <string name="btnEliminarVenta">Eliminar Venta</string>
+
+
+
 
 
 </resources>
