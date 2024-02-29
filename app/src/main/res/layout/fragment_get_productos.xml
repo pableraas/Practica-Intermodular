@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GetProductosFragment"
+    android:background="@drawable/fondoprueba">
+
+    <TextView
+        android:id="@+id/twConsultarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="90dp"
+        android:background="#E6C504"
+        android:textColor="#E8F2FA"
+        android:text="@string/btnConsultarProductos"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="338dp"
+        android:layout_height="433dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="170dp" />
+
+    <Button
+        android:id="@+id/btnConsultarProductos"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#E6C504"
+        android:backgroundTint="#E8F2FA"
+        android:text="@string/btnConsultarProductos"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

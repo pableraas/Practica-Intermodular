@@ -25,10 +25,15 @@ public class ActividadIntermedia extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         if(view.getId() == binding.btConsultarProductos.getId())    {
-            //intentSegundaActividad();
+            intentPrimeraActividad();
         } else if(view.getId() == binding.btGestionVentas.getId())  {
             intentSegundaActividad();
         }
+    }
+    //////////////////////////////////////////
+    public void intentPrimeraActividad() {
+        Intent intent = new Intent(this, PrimeraActividad.class);
+        startActivity(intent);
     }
     //////////////////////////////////////////
     public void intentSegundaActividad() {

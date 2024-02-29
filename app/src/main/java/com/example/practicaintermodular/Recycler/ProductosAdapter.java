@@ -3,70 +3,60 @@ package com.example.practicaintermodular.Recycler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.practicaintermodular.R;
 
 import java.util.List;
-/*
-public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.ProductoViewHolder> {
-    private List<Producto> listaProductos;
-    private OnItemClickListener listener;
 
-    public ProductosAdapter(List<Producto> listaProductos, OnItemClickListener listener)   {
-        this.listaProductos = listaProductos;
-        this.listener = listener;
+public class ProductosAdapter extends RecyclerView.Adapter<ProductosAdapter.ProductoViewHolder>  {
+    private List<Producto> productoList;
+    public ProductosAdapter(List<Producto> productoList) {
+        this.productoList = productoList;
     }
-
-    public ProductoViewHoler onCreateViewHolder(ViewGroup parent, int viewType)    {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_person, parent, false);
-        return new PersonViewHolder(view, listener);
+    ///////////////////////////////////////////////////
+    @NonNull
+    public ProductoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_producto, parent, false);
+        return new ProductoViewHolder(itemView);
     }
-
-}
-
+    ///////////////////////////////////////////////////
     @Override
-    public PersonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_person, parent, false);
-        return new PersonViewHolder(view, mListener);
+    public void onBindViewHolder(@NonNull ProductoViewHolder holder, int position) {
+        Producto producto = productoList.get(position);
+        holder.bind(producto);
     }
-
-    @Override
-    public void onBindViewHolder(PersonViewHolder holder, int position) {
-        Person person = personList.get(position);
-        holder.bind(person);
-    }
-
+    ///////////////////////////////////////////////////
     @Override
     public int getItemCount() {
-        return personList.size();
+        return productoList.size();
     }
-
-    public static class PersonViewHolder extends RecyclerView.ViewHolder {
-        private TextView nameTextView;
-
-        public PersonViewHolder(View itemView, final OnItemClickListener listener) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    public static class ProductoViewHolder extends RecyclerView.ViewHolder {
+        public TextView twIDProducto;
+        public TextView descripcion;
+        public TextView stockAnual;
+        public TextView PVP;
+        ///////////////////////////////////////////////////
+        public ProductoViewHolder(View itemView) {
             super(itemView);
-            nameTextView = itemView.findViewById(R.id.nameTextView);
-
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (listener != null) {
-                        int position = getAdapterPosition();
-                        if (position != RecyclerView.NO_POSITION) {
-                            listener.onItemClick(position);
-                        }
-                    }
-                }
-            });
+            twIDProducto = itemView.findViewById(R.id.twIDProducto);
+            descripcion = itemView.findViewById(R.id.twDescripcion);
+            stockAnual = itemView.findViewById(R.id.twStockAnual);
+            PVP = itemView.findViewById(R.id.twPVP);
         }
-
-        public void bind(Person person) {
-            nameTextView.setText(person.getName());
+        ///////////////////////////////////////////////////
+        public void bind(Producto producto)   {
+            twIDProducto.setText(String.valueOf(producto.getId()));
+            descripcion.setText(producto.getDescripcion());
+            stockAnual.setText(String.valueOf(producto.getStockAnual()));
+            PVP.setText(String.valueOf(producto.getPVP()));
         }
-    }
-
-    public interface OnItemClickListener {
-        void onItemClick(int position);
+        ///////////////////////////////////////////////////
     }
 }
-*/
+
