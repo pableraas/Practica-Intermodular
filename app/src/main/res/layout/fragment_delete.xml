@@ -6,15 +6,13 @@
     tools:context=".DeleteFragment"
     android:background="@drawable/fondoprueba">
 
-
-<!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/twEliminarVenta"
         android:layout_width="wrap_content"
         android:layout_height="51dp"
         android:layout_gravity="start|top"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="90dp"
         android:background="#E6C504"
         android:text="@string/btnEliminarVenta"
         android:textColor="#E8F2FA"
@@ -33,21 +31,21 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="190dp"
         />
 
 
     <Button
         android:id="@+id/btnEliminarVenta"
-        android:layout_width="wrap_content"
+        android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start|bottom"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#E8F2FA"
         android:text="@string/btnEliminarVenta"
         android:textColor="#E6C504"
-        android:backgroundTint="#E8F2FA"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </FrameLayout>

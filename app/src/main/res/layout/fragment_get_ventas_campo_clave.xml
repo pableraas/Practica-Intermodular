@@ -3,13 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetVentasCampoClaveFragment">
+    tools:context=".GetVentasCampoClaveFragment"
+    android:background="@drawable/fondoprueba">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="24dp"
-        android:textAlignment="center"
-        android:text="Get Ventas Campo Clave" />
+        android:id="@+id/twConsultarventaXID"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="90dp"
+        android:background="#E6C504"
+        android:textColor="#E8F2FA"
+        android:text="@string/btnConsultarXClave"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etClaveVenta"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/eTClaveVenta"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="190dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="338dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="280dp" />
+
+    <Button
+        android:id="@+id/btnConsultarFechaXClave"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#E8F2FA"
+        android:text="@string/btnConsultarXClave"
+        android:textColor="#E6C504"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 </FrameLayout>

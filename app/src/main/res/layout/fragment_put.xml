@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="53dp"
         android:layout_gravity="start|top"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="90dp"
         android:text="@string/btnInsertarVenta"
         android:background="#E6C504"
         android:textColor="#E8F2FA"
@@ -80,14 +80,14 @@
 
     <Button
         android:id="@+id/btnInsertarVenta"
-        android:layout_width="wrap_content"
+        android:layout_width="272dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start|bottom"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#E8F2FA"
         android:text="@string/btnInsertarVenta"
         android:textColor="#E6C504"
-        android:backgroundTint="#E8F2FA"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 </FrameLayout>

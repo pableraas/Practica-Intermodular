@@ -27,12 +27,12 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/fecha1"
+        android:text="@string/eTFecha1"
         android:textColor="#E8F2FA"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="190dp"
         />
 
     <EditText
@@ -42,12 +42,12 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/fecha2"
+        android:text="@string/eTFecha2"
         android:textColor="#E8F2FA"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="240dp"/>
+        android:layout_marginTop="250dp"/>
 
 
     <androidx.recyclerview.widget.RecyclerView

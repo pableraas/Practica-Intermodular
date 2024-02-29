@@ -20,8 +20,12 @@
     <string name="btnConsultarXClave">Consultar por ID</string>
     <string name="btnEliminarVenta">Eliminar Venta</string>
 
-    <string name="fecha1">Fecha inicial</string>
-    <string name="fecha2">Fecha final</string>
+    <string name="eTFecha1">Fecha inicial</string>
+    <string name="eTFecha2">Fecha final</string>
+    <string name="eTNIF">NIF del cliente</string>
+    <string name="eTClaveVenta">ID Venta</string>
+
+
 
 
 
