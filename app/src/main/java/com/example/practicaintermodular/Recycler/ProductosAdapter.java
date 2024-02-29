@@ -1,4 +1,4 @@
-package com.example.practicaintermodular;
+package com.example.practicaintermodular.Recycler;
 
 import android.view.LayoutInflater;
 import android.view.View;

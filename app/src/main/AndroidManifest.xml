@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PracticaIntermodular"
         tools:targetApi="31">
         <activity
-            android:name=".RecyclerView"
+            android:name=".Recycler.RecyclerView"
             android:exported="false" />
         <activity
             android:name=".ActividadIntermedia"

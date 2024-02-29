@@ -1,8 +1,10 @@
-package com.example.practicaintermodular;
+package com.example.practicaintermodular.Recycler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.practicaintermodular.R;
 
 public class RecyclerView extends AppCompatActivity {
 

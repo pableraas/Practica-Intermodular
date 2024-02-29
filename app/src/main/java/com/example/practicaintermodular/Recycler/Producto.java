@@ -1,4 +1,4 @@
-package com.example.practicaintermodular;
+package com.example.practicaintermodular.Recycler;
 
 public class Producto {
 
