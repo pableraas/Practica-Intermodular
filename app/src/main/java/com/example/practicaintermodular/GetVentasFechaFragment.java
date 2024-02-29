@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.example.practicaintermodular.Recycler.Venta;
 import com.example.practicaintermodular.Recycler.VentasAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,7 +34,7 @@ public class GetVentasFechaFragment extends Fragment {
     private String mParam2;
     private RecyclerView recyclerView;
     private VentasAdapter ventasAdapter;
-    private List<Venta> listaDeVentas;
+    private List<Venta> listaDeVentas = new ArrayList<Venta>();
 
 
     public GetVentasFechaFragment() {
