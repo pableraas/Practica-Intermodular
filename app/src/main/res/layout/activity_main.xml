@@ -9,8 +9,9 @@
 
     <TextView
         android:id="@+id/twLogin"
-        android:layout_width="149dp"
-        android:layout_height="71dp"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:background="#E6C504"
         android:text="@string/tWLogin"
         android:textColor="#E8F2FA"
         android:textSize="40sp"
@@ -57,7 +58,8 @@
         android:id="@+id/btInicio"
         android:layout_width="237dp"
         android:layout_height="73dp"
-        android:backgroundTint="#E6C504"
+        android:textColor="#E6C504"
+        android:backgroundTint="#E8F2FA"
         android:text="@string/btLogin"
         android:textSize="30sp"
         android:textStyle="bold"

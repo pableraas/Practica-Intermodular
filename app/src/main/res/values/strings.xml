@@ -20,6 +20,10 @@
     <string name="btnConsultarXClave">Consultar por ID</string>
     <string name="btnEliminarVenta">Eliminar Venta</string>
 
+    <string name="fecha1">Fecha inicial</string>
+    <string name="fecha2">Fecha final</string>
+
+
 
 
 

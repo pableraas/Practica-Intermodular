@@ -11,10 +11,11 @@
     <TextView
         android:id="@+id/twEliminarVenta"
         android:layout_width="wrap_content"
-        android:layout_height="87dp"
+        android:layout_height="51dp"
         android:layout_gravity="start|top"
         android:layout_marginStart="95dp"
         android:layout_marginTop="125dp"
+        android:background="#E6C504"
         android:text="@string/btnEliminarVenta"
         android:textColor="#E8F2FA"
         android:textSize="30sp"
@@ -44,7 +45,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginBottom="140dp"
         android:text="@string/btnEliminarVenta"
-        android:backgroundTint="#E6C504"
+        android:textColor="#E6C504"
+        android:backgroundTint="#E8F2FA"
         android:textSize="30sp"
         android:textStyle="bold"/>
 

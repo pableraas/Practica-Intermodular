@@ -3,10 +3,13 @@ package com.example.practicaintermodular;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.practicaintermodular.Recycler.VentasAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +26,8 @@ public class GetVentasFechaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView recyclerView;
+    private VentasAdapter ventasAdapter;
 
     public GetVentasFechaFragment() {
         // Required empty public constructor

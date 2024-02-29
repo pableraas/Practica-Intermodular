@@ -3,14 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetVentasFechaFragment">
+    tools:context=".GetVentasFechaFragment"
+    android:background="@drawable/fondoprueba">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="24dp"
-        android:textAlignment="center"
-        android:text="Get Ventas Fecha Fragment" />
+        android:id="@+id/twConsultarventaXFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="90dp"
+        android:background="#E6C504"
+        android:textColor="#E8F2FA"
+        android:text="@string/btnConsultarXFechas"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFecha1"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/fecha1"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="170dp"
+        />
+
+    <EditText
+        android:id="@+id/etFecha2"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/fecha2"
+        android:textColor="#E8F2FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="240dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="338dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="340dp" />
+
+    <Button
+        android:id="@+id/btnConsultarFechaXVentas"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#E6C504"
+        android:backgroundTint="#E8F2FA"
+        android:text="@string/btnConsultarXFechas"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 </FrameLayout>
