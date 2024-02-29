@@ -14,7 +14,6 @@ import java.util.List;
 
 public class VentasAdapter extends RecyclerView.Adapter<VentasAdapter.VentaViewHolder>  {
     private List<Venta> ventasList;
-
     public VentasAdapter(List<Venta> ventasList) {
         this.ventasList = ventasList;
     }

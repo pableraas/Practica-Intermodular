@@ -20,7 +20,6 @@ public class ActividadIntermedia extends AppCompatActivity implements View.OnCli
 
         binding.btConsultarProductos.setOnClickListener(this);
         binding.btGestionVentas.setOnClickListener(this);
-
     }
     //////////////////////////////////////////
     @Override
