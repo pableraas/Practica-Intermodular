@@ -1,0 +1,47 @@
+<!-- item_venta.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/twIDVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F2FA"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/twFechaVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F2FA"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/twIDCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F2FA"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/twIDProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F2FA"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/twCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F2FA"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
