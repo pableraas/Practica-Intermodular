@@ -3,16 +3,20 @@ package com.example.practicaintermodular;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
+import com.example.practicaintermodular.Recycler.VentasAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class    SegundaActividad extends AppCompatActivity {
 
     FrameLayout frameLayout;
     TabLayout tabLayout;
+    private RecyclerView recyclerView;
+    private VentasAdapter ventasAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

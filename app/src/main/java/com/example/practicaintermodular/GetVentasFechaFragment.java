@@ -2,14 +2,19 @@ package com.example.practicaintermodular;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.practicaintermodular.Recycler.Venta;
 import com.example.practicaintermodular.Recycler.VentasAdapter;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +33,8 @@ public class GetVentasFechaFragment extends Fragment {
     private String mParam2;
     private RecyclerView recyclerView;
     private VentasAdapter ventasAdapter;
+    private List<Venta> listaDeVentas;
+
 
     public GetVentasFechaFragment() {
         // Required empty public constructor
@@ -54,6 +61,7 @@ public class GetVentasFechaFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -61,9 +69,14 @@ public class GetVentasFechaFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_get_ventas_fecha, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_get_ventas_fecha, container, false);
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        ventasAdapter = new VentasAdapter(listaDeVentas);
+        recyclerView.setAdapter(ventasAdapter);
+        return rootView;
     }
+
 }

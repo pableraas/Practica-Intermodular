@@ -3,10 +3,17 @@ package com.example.practicaintermodular;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.practicaintermodular.Recycler.Venta;
+import com.example.practicaintermodular.Recycler.VentasAdapter;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +30,9 @@ public class GetVentasNifFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView recyclerView;
+    private VentasAdapter ventasAdapter;
+    private List<Venta> listaDeVentas;
 
     public GetVentasNifFragment() {
         // Required empty public constructor
@@ -56,9 +66,12 @@ public class GetVentasNifFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_get_ventas_nif, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_get_ventas_nif, container, false);
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        ventasAdapter = new VentasAdapter(listaDeVentas);
+        recyclerView.setAdapter(ventasAdapter);
+        return rootView;
     }
 }
