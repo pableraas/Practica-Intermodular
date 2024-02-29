@@ -1,4 +1,4 @@
-package com.example.practicaintermodular;
+package com.example.practicaintermodular.Fragments;
 
 import android.os.Bundle;
 
@@ -10,12 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.practicaintermodular.R;
 import com.example.practicaintermodular.Recycler.Venta;
 import com.example.practicaintermodular.Recycler.VentasAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
-public class GetVentasNifFragment extends Fragment {
+
+public class GetVentasCampoClaveFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private String mParam1;
@@ -24,12 +26,11 @@ public class GetVentasNifFragment extends Fragment {
     private VentasAdapter ventasAdapter;
     private List<Venta> listaDeVentas = new ArrayList<Venta>();
     ///////////////////////////////////////////////////
-    public GetVentasNifFragment() {
+    public GetVentasCampoClaveFragment() {
     }
     ///////////////////////////////////////////////////
-    // TODO: Rename and change types and number of parameters
-    public static GetVentasNifFragment newInstance(String param1, String param2) {
-        GetVentasNifFragment fragment = new GetVentasNifFragment();
+    public static GetVentasCampoClaveFragment newInstance(String param1, String param2) {
+        GetVentasCampoClaveFragment fragment = new GetVentasCampoClaveFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -48,7 +49,7 @@ public class GetVentasNifFragment extends Fragment {
     ///////////////////////////////////////////////////
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_get_ventas_nif, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_get_ventas_campo_clave, container, false);
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         ventasAdapter = new VentasAdapter(listaDeVentas);

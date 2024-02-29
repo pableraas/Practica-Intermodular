@@ -8,6 +8,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
+import com.example.practicaintermodular.Fragments.DeleteFragment;
+import com.example.practicaintermodular.Fragments.GetVentasCampoClaveFragment;
+import com.example.practicaintermodular.Fragments.GetVentasFechaFragment;
+import com.example.practicaintermodular.Fragments.GetVentasNifFragment;
+import com.example.practicaintermodular.Fragments.PutFragment;
 import com.example.practicaintermodular.Recycler.VentasAdapter;
 import com.google.android.material.tabs.TabLayout;
 
