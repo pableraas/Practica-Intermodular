@@ -6,8 +6,6 @@
     tools:context=".Fragments.PutFragment"
     android:background="@drawable/fondoprueba">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
         android:id="@+id/twInsertarVenta"
         android:layout_width="wrap_content"

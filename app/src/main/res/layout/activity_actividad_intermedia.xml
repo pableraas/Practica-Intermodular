@@ -7,7 +7,6 @@
     tools:context=".ActividadIntermedia"
     android:background="@drawable/fondoprueba">
 
-
     <TextView
         android:id="@+id/twEscogeOpcion"
         android:layout_width="229dp"

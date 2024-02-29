@@ -6,7 +6,6 @@
     tools:context=".Fragments.GetVentasFechaFragment"
     android:background="@drawable/fondoprueba">
 
-
     <TextView
         android:id="@+id/twConsultarventaXFecha"
         android:layout_width="wrap_content"
@@ -48,7 +47,6 @@
         android:textStyle="bold"
         android:layout_marginStart="70dp"
         android:layout_marginTop="250dp"/>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

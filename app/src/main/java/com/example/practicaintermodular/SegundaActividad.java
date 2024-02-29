@@ -14,13 +14,13 @@ import com.example.practicaintermodular.Fragments.GetVentasFechaFragment;
 import com.example.practicaintermodular.Fragments.GetVentasNifFragment;
 import com.example.practicaintermodular.Fragments.PutFragment;
 import com.example.practicaintermodular.Recycler.VentasAdapter;
+import com.example.practicaintermodular.databinding.ActivityMainBinding;
+import com.example.practicaintermodular.databinding.ActivitySegundaActividadBinding;
 import com.google.android.material.tabs.TabLayout;
 
 public class    SegundaActividad extends AppCompatActivity {
     FrameLayout frameLayout;
     TabLayout tabLayout;
-    private RecyclerView recyclerView;
-    private VentasAdapter ventasAdapter;
     ///////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {

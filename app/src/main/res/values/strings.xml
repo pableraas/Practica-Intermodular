@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">PracticaIntermodular</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tWLogin">LOG IN</string>
     <string name="eTUsuario">Usuario (DNI)</string>
@@ -19,7 +18,6 @@
     <string name="btnConsultarXNif">Consultar por NIF</string>
     <string name="btnConsultarXClave">Consultar por ID</string>
     <string name="btnEliminarVenta">Eliminar Venta</string>
-
     <string name="eTFecha1">Fecha inicial</string>
     <string name="eTFecha2">Fecha final</string>
     <string name="eTNIF">NIF del cliente</string>
