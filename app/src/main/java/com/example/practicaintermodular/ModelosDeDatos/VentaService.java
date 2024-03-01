@@ -22,6 +22,4 @@ public interface VentaService {
 
     @DELETE("ventas/{id}")
     Call<Void> eliminarVenta(@Path("id") Long id);
-
-    // Aquí puedes agregar métodos adicionales según sea necesario
 }
