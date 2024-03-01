@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ActivityMainBinding binding;
+    ActivityMainBinding binding;//funciona
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
